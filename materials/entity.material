@@ -990,7 +990,6 @@
       ],
       "msaaSupport": "Both",
       "depthFunc": "GreaterEqual"
-
     }
   }
 }
