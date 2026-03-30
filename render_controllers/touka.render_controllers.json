@@ -3,7 +3,7 @@
   "render_controllers": {
     "controller.render.touka": {
       "geometry": "Geometry.touka",
-      "materials": [ { "*": "Material.touka" } ],
+      "materials": [ { "*": "Material.emissive" } ],
       "textures": [ "Texture.touka" ],
       "overlay_color": {
           "r": "q.property('property:glow') == 1 || q.property('property:glow') == 3 || q.property('property:glow') == 5 ? 0.8 : 0.0",

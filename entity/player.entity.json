@@ -103,6 +103,8 @@
         "blink": "controller.animation.persona.blink"
       },
       "render_controllers": [
+        //{ "controller.render.touka": "!variable.is_first_person && !q.is_in_ui" },
+        //{ "controller.render.emissive": "!variable.is_first_person && !q.is_in_ui" },
         { "controller.render.emissive_waku": "!variable.is_first_person && !q.is_in_ui" },
         { "controller.render.touka_waku": "!variable.is_first_person && !q.is_in_ui" },
         
