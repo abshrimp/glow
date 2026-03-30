@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.touka": {
+      "geometry": "Geometry.touka",
+      "materials": [ { "*": "Material.touka" } ],
+      "textures": [ "Texture.touka" ],
+      "overlay_color": {
+          "r": "q.property('property:glow') == 1 || q.property('property:glow') == 3 || q.property('property:glow') == 5 ? 0.8 : 0.0",
+          "g": "q.property('property:glow') == 3 || q.property('property:glow') == 4 || q.property('property:glow') == 6 ? 0.8 : 0.0",
+          "b": "q.property('property:glow') == 2 || q.property('property:glow') == 5 || q.property('property:glow') == 6 ? 0.8 : 0.0",
+          "a": "q.property('property:glow') >= 1 ? 0.95 : 0.0"
+      },
+      "is_hurt_color":{
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "on_fire_color":{
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "light_color_multiplier": 10,
+      "ignore_lighting" : true
+    },
+    "controller.render.emissive": {
+      "geometry": "Geometry.touka",
+      "materials": [ { "*": "Material.emissive" } ],
+      "textures": [ "Texture.touka" ]
+    },
+    "controller.render.touka_waku": {
+      "geometry": "Geometry.touka_waku",
+      "materials": [ { "*": "Material.touka" } ],
+      "textures": [ "Texture.touka_waku" ],
+      "overlay_color": {
+          "r": 0.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+      },
+      "is_hurt_color":{
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "on_fire_color":{
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "light_color_multiplier": 10,
+      "ignore_lighting" : true
+    },
+    "controller.render.emissive_waku": {
+      "geometry": "Geometry.touka_waku",
+      "materials": [ { "*": "Material.emissive" } ],
+      "textures": [ "Texture.touka_waku" ]
+    }
+  }
+}

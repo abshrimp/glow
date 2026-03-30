@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "@NYANKUN",
+        "name": "GlowTeam_re.ver5.0",
+        "uuid": "e8caf371-4d3d-71c2-18d5-508c49153062",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 18, 10 ]
+    },
+    "modules": [
+        {
+            "description": "@NYANKUN",
+            "type": "resources",
+            "uuid": "7ea57088-3797-f885-c8b5-e8165233e919",
+            "version": [1, 0, 0]
+        }
+    ]
+}
