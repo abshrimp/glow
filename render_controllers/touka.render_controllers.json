@@ -36,7 +36,9 @@
     "controller.render.emissive": {
       "geometry": "Geometry.touka",
       "materials": [ { "*": "Material.emissive" } ],
-      "textures": [ "Texture.touka" ]
+      "textures": [ "Texture.touka" ],
+      "light_color_multiplier": 10,
+      "ignore_lighting" : true
     },
 
     //黒枠
@@ -68,7 +70,9 @@
     "controller.render.emissive_waku": {
       "geometry": "Geometry.touka_waku",
       "materials": [ { "*": "Material.emissive" } ],
-      "textures": [ "Texture.touka_waku" ]
+      "textures": [ "Texture.touka_waku" ],
+      "light_color_multiplier": 10,
+      "ignore_lighting" : true
     }
   }
 }
