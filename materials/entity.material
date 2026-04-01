@@ -978,10 +978,12 @@
       "+defines": [ "ALPHA_TEST","USE_UV_ANIM","USE_EMISSIVE" ]
     },
     "ny_emissive:entity_nocull": {
-      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ]
+      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ],
+      "+states": [ "DisableDepthWrite" ]
     },
     "ny_touka:entity_nocull": {
       "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ],
+      "+states": [ "DisableDepthWrite" ],
       "+samplerStates": [
         {
           "samplerIndex": 1,

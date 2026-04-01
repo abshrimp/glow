@@ -37,6 +37,24 @@
       "geometry": "Geometry.touka",
       "materials": [ { "*": "Material.emissive" } ],
       "textures": [ "Texture.touka" ],
+      "overlay_color": {
+          "r": 0.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+      },
+      "is_hurt_color":{
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "on_fire_color":{
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "light_color_multiplier": 10,
       "ignore_lighting" : true
     },
