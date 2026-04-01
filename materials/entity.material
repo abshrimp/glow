@@ -978,17 +978,10 @@
       "+defines": [ "ALPHA_TEST","USE_UV_ANIM","USE_EMISSIVE" ]
     },
     "ny_emissive:entity_nocull": {
-      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ],
-      "+samplerStates": [
-        {
-          "samplerIndex": 1,
-          "textureWrap": "Repeat"
-        }
-      ],
-      "msaaSupport": "Both"
+      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE"]
     },
     "ny_touka:entity_nocull": {
-      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ],
+      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE" ],
       "+samplerStates": [
         {
           "samplerIndex": 1,
@@ -997,6 +990,7 @@
       ],
       "msaaSupport": "Both",
       "depthFunc": "GreaterEqual"
+
     }
   }
 }
