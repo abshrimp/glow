@@ -105,8 +105,8 @@
       "render_controllers": [
         //{ "controller.render.touka": "!variable.is_first_person && !q.is_in_ui" },
         //{ "controller.render.emissive": "!variable.is_first_person && !q.is_in_ui" },
-        { "controller.render.emissive_waku": "!variable.is_first_person && !q.is_in_ui" },
-        { "controller.render.touka_waku": "!variable.is_first_person && !q.is_in_ui" },
+        { "controller.render.emissive_waku": "!variable.is_first_person && !query.is_in_ui && query.is_saddled" },
+        { "controller.render.touka_waku": "!variable.is_first_person && !query.is_in_ui && query.is_saddled" },
         
         { "controller.render.player.first_person": "variable.is_first_person" },
         { "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon" },
