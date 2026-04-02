@@ -112,22 +112,9 @@
 				"pivot": [5, 22, 0]
 			},
 			{
-				"name": "leftItem",
-				"parent": "leftArm",
-				"pivot": [6, 15, 1]
-			},
-			{
 				"name": "rightSleeve",
 				"parent": "rightArm",
 				"pivot": [-5, 22, 0]
-			},
-			{
-				"name": "rightItem",
-				"parent": "rightArm",
-				"pivot": [-6, 15, 1],
-				"locators": {
-					"lead_hold": [-6, 15, 1]
-				}
 			},
 			{
 				"name": "jacket",
@@ -258,22 +245,9 @@
 				"pivot": [5, 22, 0]
 			},
 			{
-				"name": "leftItem",
-				"parent": "leftArm",
-				"pivot": [6, 15, 1]
-			},
-			{
 				"name": "rightSleeve",
 				"parent": "rightArm",
 				"pivot": [-5, 22, 0]
-			},
-			{
-				"name": "rightItem",
-				"parent": "rightArm",
-				"pivot": [-6, 15, 1],
-				"locators": {
-					"lead_hold": [-6, 15, 1]
-				}
 			},
 			{
 				"name": "jacket",

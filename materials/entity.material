@@ -977,9 +977,15 @@
     "ui:entity": {
       "+defines": [ "ALPHA_TEST","USE_UV_ANIM","USE_EMISSIVE" ]
     },
-    "ny_emissive:entity_nocull": {
-      "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ],
-      "+states": [ "DisableDepthWrite" ]
+    "ny_emissive:entity": {
+      "+defines": [ "USE_UV_ANIM", "USE_EMISSIVE", "ALPHA_TEST" ],
+      "+states": [ "InvertCulling" ],
+      "+samplerStates": [
+        {
+          "samplerIndex": 1,
+          "textureWrap": "Repeat"
+        }
+      ]
     },
     "ny_touka:entity_nocull": {
       "+defines": [ "USE_UV_ANIM","USE_EMISSIVE","ALPHA_TEST" ],
@@ -991,7 +997,7 @@
         }
       ],
       "msaaSupport": "Both",
-      "depthFunc": "GreaterEqual"
+      "depthFunc": "Always"
 
     }
   }
