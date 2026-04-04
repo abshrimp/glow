@@ -1,9 +1,9 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:wither_skeleton",
-      "min_engine_version": "1.8.0",
+      "min_engine_version": "1.10.0",
       "materials": {
         "default": "skeleton",
         "touka": "ny_touka",
@@ -12,12 +12,16 @@
       "textures": {
         "default": "textures/entity/skeleton/wither_skeleton",
         "touka": "textures/entity/touka",
-        "touka_waku": "textures/entity/touka_waku"
+        "touka_waku": "textures/entity/touka_waku",
+        "emissive": "textures/entity/emissive_texture_example",
+        "emissive_waku": "textures/entity/emissive_waku_texture_example"
       },
       "geometry": {
         "default": "geometry.skeleton.wither.v1.8",
-        "touka": "geometry.humanoid.touka",
-        "touka_waku": "geometry.humanoid.touka_waku"
+        "touka": "geometry.wither_skeleton.touka",
+        "touka_waku": "geometry.wither_skeleton.touka_waku",
+        "emissive": "geometry.skeleton.wither.v1.8",
+        "emissive_waku": "geometry.wither_skeleton.touka_waku"
       },
       "scripts": {
         "pre_animation": [
@@ -93,11 +97,10 @@
         }
       ],
       "render_controllers": [
-        {"controller.render.emissive_waku": "query.is_saddled"},
-        {"controller.render.touka_waku": "query.is_saddled"},
-        {"controller.render.emissive": "query.is_saddled"},
-        {"controller.render.touka": "query.is_saddled"},
-        "controller.render.wither_skeleton"
+        "controller.render.emissive_waku",
+        "controller.render.touka_waku",
+        "controller.render.emissive",
+        "controller.render.touka"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_wither_skeleton"
