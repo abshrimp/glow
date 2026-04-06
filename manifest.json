@@ -2,14 +2,14 @@
     "format_version": 2,
     "header": {
         "name": "GlowRP",
-        "uuid": "2d865ce7-feca-e10f-35db-f5b231d3e845",
+        "uuid": "4e0b8947-97b3-d8f9-0ec0-87ea142194ae",
         "version": [1, 0, 0],
         "min_engine_version": [ 1, 18, 10 ]
     },
     "modules": [
         {
             "type": "resources",
-            "uuid": "3eaaa222-74d5-5fd5-4a2c-ea87950b4db9",
+            "uuid": "5044b5be-7223-4837-8a73-358c222229f1",
             "version": [1, 0, 0]
         }
     ]

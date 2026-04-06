@@ -12,16 +12,12 @@
       "textures": {
         "default": "textures/entity/skeleton/wither_skeleton",
         "touka": "textures/entity/touka",
-        "touka_waku": "textures/entity/touka_waku",
-        "emissive": "textures/entity/emissive_texture_example",
-        "emissive_waku": "textures/entity/emissive_waku_texture_example"
+        "touka_waku": "textures/entity/touka_waku"
       },
       "geometry": {
         "default": "geometry.skeleton.wither.v1.8",
         "touka": "geometry.wither_skeleton.touka",
-        "touka_waku": "geometry.wither_skeleton.touka_waku",
-        "emissive": "geometry.skeleton.wither.v1.8",
-        "emissive_waku": "geometry.wither_skeleton.touka_waku"
+        "touka_waku": "geometry.wither_skeleton.touka_waku"
       },
       "scripts": {
         "pre_animation": [
@@ -31,24 +27,25 @@
           "variable.riding_y_offset = variable.riding_y_offset_with_respect_to_player + variable.riding_y_offset_on_vehicle_where_other_entites_can_stand;"
         ],
         "animate": [
-          "look_at_target",
-          "move",
-          "riding",
-          "holding",
-          "brandish_spear",
-          "charging",
-          "attack",
-          "sneaking",
-          "damage_nearby_mobs",
-          "bow_and_arrow",
-          "use_item_progress",
-          "wither_skeleton_attack",
-          "swimming",
+          "look_at_target_ctrl",
+          "move_ctrl",
+          "riding_ctrl",
+          "holding_ctrl",
+          "brandish_spear_ctrl",
+          "charging_ctrl",
+          "attack_ctrl",
+          "sneaking_ctrl",
+          "damage_nearby_mobs_ctrl",
+          "bow_and_arrow_ctrl",
+          "use_item_progress_ctrl",
+          "wither_skeleton_attack_ctrl",
+          "swimming_ctrl",
           "touka_anim"
         ]
       },
       "animations": {
         "touka_anim": "animation.player.touka",
+        
         "look_at_target_default": "animation.humanoid.look_at_target.default",
         "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
         "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
@@ -66,30 +63,28 @@
         "use_item_progress": "animation.humanoid.use_item_progress",
         "wither_skeleton_attack": "animation.wither_skeleton.attack",
         "swimming": "animation.zombie.swimming",
-        "riding.body": "animation.humanoid.riding.body"
+        "riding.body": "animation.humanoid.riding.body",
+        
+        "look_at_target_ctrl": "controller.animation.humanoid.look_at_target",
+        "move_ctrl": "controller.animation.humanoid.move",
+        "riding_ctrl": "controller.animation.humanoid.riding",
+        "holding_ctrl": "controller.animation.humanoid.holding",
+        "brandish_spear_ctrl": "controller.animation.humanoid.brandish_spear",
+        "charging_ctrl": "controller.animation.humanoid.charging",
+        "attack_ctrl": "controller.animation.humanoid.attack",
+        "sneaking_ctrl": "controller.animation.humanoid.sneaking",
+        "damage_nearby_mobs_ctrl": "controller.animation.humanoid.damage_nearby_mobs",
+        "bow_and_arrow_ctrl": "controller.animation.humanoid.bow_and_arrow",
+        "use_item_progress_ctrl": "controller.animation.humanoid.use_item_progress",
+        "wither_skeleton_attack_ctrl": "controller.animation.wither_skeleton.attack",
+        "swimming_ctrl": "controller.animation.zombie.swimming"
       },
-      "animation_controllers": [
-        { "look_at_target": "controller.animation.humanoid.look_at_target" },
-        { "move": "controller.animation.humanoid.move" },
-        { "riding": "controller.animation.humanoid.riding" },
-        { "holding": "controller.animation.humanoid.holding" },
-        { "brandish_spear": "controller.animation.humanoid.brandish_spear" },
-        { "charging": "controller.animation.humanoid.charging" },
-        { "attack": "controller.animation.humanoid.attack" },
-        { "sneaking": "controller.animation.humanoid.sneaking" },
-        { "damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs" },
-        { "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow" },
-        { "use_item_progress": "controller.animation.humanoid.use_item_progress" },
-        { "wither_skeleton_attack": "controller.animation.wither_skeleton.attack" },
-        { "swimming": "controller.animation.zombie.swimming" }
-      ],
-
       "render_controllers": [
-        "controller.render.skeleton",
         "controller.render.emissive_waku",
         "controller.render.touka_waku",
         "controller.render.emissive",
-        "controller.render.touka"
+        "controller.render.touka",
+        "controller.render.skeleton"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_wither_skeleton"
